@@ -54,6 +54,14 @@ function getRemainingTime() {
   const oneHour = 60 * 60 * 1000;
   const oneMinute = 60 * 1000;
   // Calculate all valus
+  let days = t / oneDay;
+  days = Math.floor(days);
+  let hours = Math.floor((t % oneDay) / oneHour);
+  let minutes = Math.floor((t % oneHour) / oneMinute);
+  let seconds = Math.floor((t % oneMinute) / 1000);
+
+  // set values array
+  
 }
 
 getRemainingTime();
