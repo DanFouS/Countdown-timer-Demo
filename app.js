@@ -34,5 +34,7 @@ const hours = futureDate.getHours();
 const minutes = futureDate.getMinutes();
 const seconds = futureDate.getSeconds();
 
+let month = futureDate.getMonth();
+month = months[month];
 
-giveaway.textContent = `Giveaway ends on ${year} ${hours}:${minutes}:${seconds}am`;
+giveaway.textContent = `Giveaway ends on ${month} ${year} ${hours}:${minutes}:${seconds}am`;
